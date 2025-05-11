@@ -1,0 +1,127 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #1A237E 0%, #26A69A 100%);
+    color: #F8F9FA;
+    overflow-x: hidden;
+}
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    background: rgba(26, 35, 126, 0.9);
+    backdrop-filter: blur(8px);
+}
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: #FFCA28;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FF6F61, #FFCA28);
+    bottom: -4px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.card {
+    background: #F8F9FA;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.interactive-card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid #FFCA28;
+}
+.coral-button {
+    background: linear-gradient(45deg, #FF6F61, #FF8A65);
+    transition: transform 0.3s ease;
+}
+.coral-button:hover {
+    transform: translateY(-2px);
+}
+.social-icon {
+    transition: transform 0.5s ease;
+}
+.social-icon:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+.slide-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.8s ease forwards;
+}
+@keyframes slideIn {
+    to { opacity: 1; transform: translateY(0); }
+}
+.skills-carousel {
+    perspective: 1000px;
+}
+.carousel-track {
+    display: flex;
+    animation: carousel 20s linear infinite;
+}
+.skill-item {
+    flex: 0 0 25%;
+    transition: transform 0.3s ease;
+}
+.skill-item:hover {
+    transform: scale(1.1) rotateY(10deg);
+}
+.skill-item:hover .description {
+    display: block;
+}
+@keyframes carousel {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+@media (max-width: 640px) {
+    .carousel-track {
+        animation: carousel 15s linear infinite;
+    }
+    .skill-item {
+        flex: 0 0 50%;
+    }
+}
+.stat {
+    transform: scale(1);
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+.lazy {
+    loading: lazy;
+}
+#nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(26, 35, 126, 0.95);
+    padding: 16px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    #nav-menu.active {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
+    }
+}
+input:focus, textarea:focus {
+    border-color: #FF6F61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+}

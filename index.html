@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lucky Singh's Portfolio - Showcasing projects, interests, and blog">
+    <title>Lucky Singh's Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="p-4 sm:p-6 sticky top-0 z-20 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl sm:text-3xl font-bold text-white">Lucky Singh</h1>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-2xl text-white"><i class="fas fa-bars"></i></button>
+            </div>
+            <ul id="nav-menu" class="hidden md:flex space-x-4 lg:space-x-8 text-white">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#interests" class="nav-link">Interests</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Full Screen) -->
+    <section id="home" class="min-h-screen flex items-center justify-center text-white text-center slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">Hey, I'm Lucky Singh!</h2>
+            <p class="text-lg sm:text-xl lg:text-2xl mb-8 max-w-2xl mx-auto">A creative soul crafting cool projects, sharing stories, and exploring passions.</p>
+            <a href="#about" class="coral-button text-white px-6 sm:px-8 py-3 rounded-full text-base sm:text-lg">Discover Me</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 sm:py-24 bg-[#F8F9FA] slide-in">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-[#1A237E]">About Me</h2>
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf33584f" alt="Lucky Singh Avatar" class="w-24 sm:w-32 h-24 sm:h-32 rounded-full mx-auto mb-6 object-cover">
+            <p class="text-base sm:text-lg mb-8 max-w-3xl mx-auto text-[#1A237E]">I'm a passionate creator who loves building websites, designing interfaces, and sharing my journey through blogs. When I'm not coding, you’ll find me sketching or gaming!</p>
+            <div class="flex justify-center space-x-4 sm:space-x-8">
+                <div class="stat">
+                    <p class="text-2xl sm:text-3xl font-bold text-[#FF6F61]">10+</p>
+                    <p class="text-sm sm:text-base text-[#1A237E]">Projects Completed</p>
+                </div>
+                <div class="stat">
+                    <p class="text-2xl sm:text-3xl font-bold text-[#FF6F61]">5</p>
+                    <p class="text-sm sm:text-base text-[#1A237E]">Years of Experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 sm:py-24 slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-white">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1516321310768-61c5e24d8f75" alt="Project 1" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">E-Commerce Platform</h3>
+                    <p class="text-sm sm:text-base mb-4 text-[#1A237E]">A fully responsive online store with payment integration.</p>
+                    <a href="https://example.com/ecommerce" target="_blank" class="text-[#FF6F61] hover:underline">View Project</a>
+                </div>
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1498050584596-2c6fd9714eb7" alt="Project 2" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Portfolio Redesign</h3>
+                    <p class="text-sm sm:text-base mb-4 text-[#1A237E]">A sleek, modern portfolio for a creative agency.</p>
+                    <a href="https://example.com/portfolio" target="_blank" class="text-[#FF6F61] hover:underline">View Project</a>
+                </div>
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1507238691744-903d6b517b77" alt="Project 3" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Task Manager App</h3>
+                    <p class="text-sm sm:text-base mb-4 text-[#1A237E]">A productivity app with real-time collaboration.</p>
+                    <a href="https://example.com/taskmanager" target="_blank" class="text-[#FF6F61] hover:underline">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="py-16 sm:py-24 bg-[#F8F9FA] slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-[#1A237E]">My Interests</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1513739250073-5dbb315fed31" alt="Drawing" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Drawing</h3>
+                    <p class="text-sm sm:text-base text-[#1A237E]">Sketching characters and landscapes for fun.</p>
+                </div>
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e" alt="Gaming" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Gaming</h3>
+                    <p class="text-sm sm:text-base text-[#1A237E]">Exploring virtual worlds and epic battles.</p>
+                </div>
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4" alt="Traveling" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Traveling</h3>
+                    <p class="text-sm sm:text-base text-[#1A237E]">Discovering new cultures and cuisines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 sm:py-24 slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-white">My Skills</h2>
+            <div class="skills-carousel relative overflow-hidden">
+                <div class="carousel-track flex">
+                    <div class="skill-item p-4 text-center">
+                        <i class="fas fa-code text-3xl sm:text-4xl text-[#FFCA28] mb-2"></i>
+                        <p class="text-base sm:text-lg text-white">Web Development</p>
+                        <p class="text-sm text-[#F8F9FA] hidden description">HTML, CSS, JavaScript, React</p>
+                    </div>
+                    <div class="skill-item p-4 text-center">
+                        <i class="fab fa-python text-3xl sm:text-4xl text-[#FFCA28] mb-2"></i>
+                        <p class="text-base sm:text-lg text-white">Python</p>
+                        <p class="text-sm text-[#F8F9FA] hidden description">Scripting, Data Analysis</p>
+                    </div>
+                    <div class="skill-item p-4 text-center">
+                        <i class="fas fa-paint-brush text-3xl sm:text-4xl text-[#FFCA28] mb-2"></i>
+                        <p class="text-base sm:text-lg text-white">UI/UX Design</p>
+                        <p class="text-sm text-[#F8F9FA] hidden description">Figma, Adobe XD</p>
+                    </div>
+                    <div class="skill-item p-4 text-center">
+                        <i class="fas fa-palette text-3xl sm:text-4xl text-[#FFCA28] mb-2"></i>
+                        <p class="text-base sm:text-lg text-white">Graphic Design</p>
+                        <p class="text-sm text-[#F8F9FA] hidden description">Photoshop, Illustrator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Showcase Section -->
+    <section id="blog" class="py-16 sm:py-24 bg-[#F8F9FA] slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-[#1A237E]">My Blog</h2>
+            <div class="max-w-md mx-auto">
+                <div class="card p-4 sm:p-6 rounded-lg shadow-lg interactive-card">
+                    <img src="https://images.unsplash.com/photo-1507238691744-903d6b517b77" alt="Blog" class="w-full h-32 sm:h-40 object-cover rounded-lg mb-4 lazy">
+                    <h3 class="text-lg sm:text-xl font-semibold text-[#1A237E]">Stories & Insights</h3>
+                    <p class="text-sm sm:text-base mb-4 text-[#1A237E]">Read my thoughts on creativity, tech, and more.</p>
+                    <a href="blog.html" class="coral-button text-white px-6 py-2 rounded-full text-sm sm:text-base">Visit My Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 slide-in">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 text-white">Get in Touch</h2>
+            <div class="flex justify-center space-x-4 sm:space-x-8 mb-8 sm:mb-12">
+                <a href="https://github.com" target="_blank" class="social-icon text-[#FFCA28] text-2xl sm:text-3xl">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social-icon text-[#FFCA28] text-2xl sm:text-3xl">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="mailto:your.email@gmail.com" class="social-icon text-[#FFCA28] text-2xl sm:text-3xl">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon text-[#FFCA28] text-2xl sm:text-3xl">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <form id="contact-form" class="max-w-md mx-auto">
+                <div class="mb-6">
+                    <label for="name" class="block text-base sm:text-lg font-semibold text-white">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border rounded-lg mt-2 bg-[#F8F9FA] text-[#1A237E] focus:outline-none focus:border-[#FF6F61]" required>
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-base sm:text-lg font-semibold text-white">Message</label>
+                    <textarea id="message" class="w-full p-3 border rounded-lg mt-2 bg-[#F8F9FA] text-[#1A237E] focus:outline-none focus:border-[#FF6F61]" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="coral-button text-white px-6 sm:px-8 py-3 rounded-full w-full text-base sm:text-lg">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#1A237E] text-white p-4 sm:p-6 text-center">
+        <p>© 2025 Lucky Singh. Made with <i class="fas fa-heart text-[#FF6F61]"></i></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
