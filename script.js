@@ -3,7 +3,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(anchor.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
 });
@@ -20,7 +20,7 @@ document.getElementById('contact-form').addEventListener('submit', e => {
     e.preventDefault();
     const name = document.getElementById('name').value;
     const message = document.getElementById('message').value;
-    alert(`Thanks, ${name}! I'll get back to you soon!`);
+    alert(`Thanks! I'll get back to you soon!`);
     e.target.reset();
 });
 
